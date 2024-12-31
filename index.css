@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choices button {
+    font-size: 7.5rem;
+    border-radius: 40px;
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin: 10px;
+}
+
+.choices button:hover {
+    background-color: rgb(112, 176, 109);
+}
+
+#playerDisplay, #computerDisplay {
+    font-size: 2.5rem;
+}
+
+#resultDisplay {
+    font-size: 5rem;
+    margin: 30px 0;
+}
+
+.green, #playerScoreDisplay {
+    color: hsl(130, 84%, 54%);
+}
+
+.red, #computerScoreDisplay {
+    color: rgb(224, 26, 26);
+}
+
+.scoreDisplay {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .choices button {
+        font-size: 5rem;
+    }
+
+    #playerDisplay, #computerDisplay {
+        font-size: 2rem;
+    }
+
+    #resultDisplay {
+        font-size: 4rem;
+    }
+
+    .scoreDisplay {
+        font-size: 1.5rem;
+    }
+}
